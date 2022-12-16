@@ -18,7 +18,46 @@ body {
     margin: 0 auto;
 }
 
-/* to do nav */
+.nav {
+    position: fixed;
+    background-color: #222;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav.active {
+  background-color: #fff;
+}
+
+.nav.active a {
+    color: #000;
+}
+
 
 .hero {
     background-image: url('https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
